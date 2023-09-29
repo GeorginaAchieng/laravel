@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +33,5 @@ Route::get('/aboutus', function () {
 Route::get('/services', function () {
     return view('services');
 });
+
+Route::post('/signup', [Controller::class, 'signup']);
